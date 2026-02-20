@@ -1,5 +1,43 @@
-# Ignore Gradle project-specific cache directory
+# Compiled class files
+*.class
+
+# Gradle project-specific cache directory
 .gradle
 
-# Ignore Gradle build output directory
+# Gradle build output directory
 build
+
+# Gradle bin output directory
+bin
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log files
+*.log
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*~
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
