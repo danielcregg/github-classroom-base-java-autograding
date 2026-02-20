@@ -4,9 +4,12 @@
 ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/danielcregg/github-classroom-base-java-autograding?style=flat-square)
 
-A base template repository for GitHub Classroom assignments in Java. This project provides a ready-to-use Gradle project structure with JUnit 5 autograding support, making it easy for instructors to create Java programming assignments that are automatically tested when students push their code.
+A base template repository for GitHub Classroom assignments in Java with Gradle and JUnit 5 autograding support.
+
+## Overview
+
+This project provides a ready-to-use Gradle project structure with JUnit 5 autograding support, designed for instructors using GitHub Classroom. When students push their code, GitHub Actions automatically runs the JUnit test suite and reports results back to GitHub Classroom. A VS Code Dev Container configuration is included for consistent development environments.
 
 ## Features
 
@@ -24,27 +27,29 @@ A base template repository for GitHub Classroom assignments in Java. This projec
 
 ## Getting Started
 
-1. **Use this template** to create a new GitHub Classroom assignment, or clone it directly:
+### Installation
+
+1. Use this template to create a new GitHub Classroom assignment, or clone it directly:
    ```bash
    git clone https://github.com/danielcregg/github-classroom-base-java-autograding.git
    cd github-classroom-base-java-autograding
    ```
 
-2. **Open in a Dev Container** (optional): If you are using VS Code, open the project in a Dev Container for a fully configured Java 17 + Gradle environment.
+2. Open in a Dev Container (optional): If you are using VS Code, open the project in a Dev Container for a fully configured Java 17 + Gradle environment.
 
-## Usage
+### Usage
 
-**Run the application:**
+Run the application:
 ```bash
 ./gradlew run
 ```
 
-**Run the tests locally:**
+Run the tests locally:
 ```bash
 ./gradlew test
 ```
 
-**Submit your work (for students):**
+Submit your work (for students):
 ```bash
 git add .
 git commit -m "Description of changes"
@@ -53,23 +58,13 @@ git push origin main
 
 Pushing to `main` triggers GitHub Actions autograding, which runs the JUnit test suite and reports results back to GitHub Classroom.
 
-## Project Structure
+## Tech Stack
 
-```
-.
-├── app/
-│   ├── build.gradle                        # Application build config (JUnit 5, Guava)
-│   └── src/
-│       ├── main/java/miPaquete/App.java    # Main application class
-│       └── test/java/miPaquete/AppTest.java # JUnit 5 test class
-├── .devcontainer/                          # VS Code Dev Container configuration
-│   ├── devcontainer.json
-│   └── Dockerfile
-├── gradle/wrapper/                         # Gradle Wrapper files
-├── settings.gradle                         # Gradle settings
-├── gradlew                                 # Gradle Wrapper (Linux/macOS)
-└── gradlew.bat                             # Gradle Wrapper (Windows)
-```
+- **Java 17** - Programming language
+- **Gradle 7.5.1** - Build automation tool
+- **JUnit 5 (Jupiter)** - Testing framework for autograding
+- **GitHub Actions** - CI/CD for automated test grading
+- **VS Code Dev Containers** - Containerized development environment
 
 ## License
 
